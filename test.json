@@ -1,0 +1,672 @@
+{
+    "properties": {
+        "MessageFormat": {
+            "properties": {
+                "MtfName": {},
+                "MtfIdentifier": {
+                    "type": "string"
+                },
+                "MtfIndexReferenceNumber": {
+                    "type": "string"
+                },
+                "MtfSponsor": {
+                    "type": "string"
+                },
+                "MtfPurpose": {
+                    "type": "string"
+                },
+                "MtfRelatedDocument": {
+                    "type": "string"
+                },
+                "MtfRemark": {
+                    "type": "string"
+                },
+                "MtfNote": {
+                    "type": "string"
+                },
+                "MtfStructuralRelationship": {},
+                "MtfStructure": {
+                    "properties": {
+                        "SetFormatPosition": {
+                            "properties": {
+                                "SetFormatPositionName": {
+                                    "type": "string"
+                                },
+                                "SetFormatPositionNumber": {
+                                    "type": "string"
+                                },
+                                "SetFormatPositionConcept": {
+                                    "type": "string"
+                                },
+                                "SetFormatPositionUseDescription": {
+                                    "type": "string"
+                                },
+                                "OccurrenceCategory": {
+                                    "type": "string"
+                                },
+                                "Repeatability": {
+                                    "type": "string"
+                                },
+                                "AssignedSetFormat": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "SetFormatPositionName",
+                                "SetFormatPositionNumber",
+                                "OccurrenceCategory",
+                                "Repeatability",
+                                "AssignedSetFormat"
+                            ]
+                        },
+                        "AlternativeFormatPositions": {
+                            "properties": {
+                                "AlternativeType": {
+                                    "type": "string"
+                                },
+                                "SetFormatPosition": {
+                                    "type": "string"
+                                },
+                                "SegmentStructurePosition": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "AlternativeType",
+                                "SetFormatPosition",
+                                "SegmentStructurePosition"
+                            ]
+                        },
+                        "SegmentStructurePosition": {
+                            "properties": {
+                                "SegmentStructureName": {
+                                    "type": "string"
+                                },
+                                "SegmentStructureConcept": {
+                                    "type": "string"
+                                },
+                                "SegmentStructureUseDescription": {
+                                    "type": "string"
+                                },
+                                "InitialSetFormatPosition": {
+                                    "type": "string"
+                                },
+                                "OccurrenceCategory": {
+                                    "type": "string"
+                                },
+                                "Repeatability": {
+                                    "type": "string"
+                                },
+                                "SegmentStructure": {
+                                    "properties": {
+                                        "SetFormatPosition": {
+                                            "type": "string"
+                                        },
+                                        "AlternativeFormatPosition": {
+                                            "properties": {
+                                                "AlternativeType": {
+                                                    "type": "string"
+                                                },
+                                                "SetFormatPosition": {
+                                                    "type": "string"
+                                                },
+                                                "SegmentStructurePosition": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "AlternativeType",
+                                                "SetFormatPosition",
+                                                "SegmentStructurePosition"
+                                            ]
+                                        },
+                                        "SegmentStructurePosition": {
+                                            "type": "string"
+                                        },
+                                        "PosNr": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "SetFormatPosition",
+                                        "AlternativeFormatPosition",
+                                        "SegmentStructurePosition",
+                                        "PosNr"
+                                    ]
+                                },
+                                "VersionIndicator": {
+                                    "type": "string"
+                                },
+                                "State": {
+                                    "type": "string"
+                                },
+                                "StateDate": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "SegmentStructureName",
+                                "InitialSetFormatPosition",
+                                "OccurrenceCategory",
+                                "Repeatability",
+                                "SegmentStructure",
+                                "VersionIndicator",
+                                "State",
+                                "StateDate"
+                            ]
+                        },
+                        "PosNr": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "SetFormatPosition",
+                        "AlternativeFormatPositions",
+                        "SegmentStructurePosition",
+                        "PosNr"
+                    ]
+                },
+                "m_id": {
+                    "type": "string"
+                },
+                "VersionIndicator": {
+                    "type": "string"
+                },
+                "State": {
+                    "type": "string"
+                },
+                "StateDate": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "MtfName",
+                "MtfIdentifier",
+                "MtfIndexReferenceNumber",
+                "MtfStructure",
+                "m_id",
+                "VersionIndicator",
+                "State",
+                "StateDate"
+            ]
+        },
+        "SetFormat": {
+            "properties": {
+                "SetFormatName": {
+                    "properties": {
+                        "SetFormatNameType": {}
+                    },
+                    "required": [
+                        "SetFormatNameType"
+                    ]
+                },
+                "SetFormatIdentifier": {
+                    "type": "string"
+                },
+                "ColumnarIndicator": {
+                    "type": "string"
+                },
+                "GroupOfFieldsIndicator": {
+                    "type": "string"
+                },
+                "RepeatabilityForGroupOfFields": {
+                    "type": "string"
+                },
+                "SetFormatNote": {
+                    "type": "string"
+                },
+                "SetFormatExample": {
+                    "type": "string"
+                },
+                "SetFormatRemark": {
+                    "type": "string"
+                },
+                "SetFormatSponsor": {
+                    "type": "string"
+                },
+                "SetFormatRelatedDocument": {
+                    "type": "string"
+                },
+                "SetStructuralRelationship": {
+                    "properties": {
+                        "SetStructuralRelationshipRule": {
+                            "type": "string"
+                        },
+                        "SetStructuralRelationshipExplanation": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "SetStructuralRelationshipRule",
+                        "SetStructuralRelationshipExplanation"
+                    ]
+                },
+                "FieldFormatPosition": {
+                    "properties": {
+                        "FieldFormatPositionName": {},
+                        "FieldFormatPositionNumber": {
+                            "type": "string"
+                        },
+                        "OccurrenceCategory": {
+                            "type": "string"
+                        },
+                        "FieldFormatPositionConcept": {
+                            "type": "string"
+                        },
+                        "ColumnHeader": {
+                            "type": "string"
+                        },
+                        "AssignedFfirnFud": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "FieldFormatPositionName",
+                        "FieldFormatPositionNumber",
+                        "OccurrenceCategory",
+                        "AssignedFfirnFud"
+                    ]
+                },
+                "s_id": {
+                    "type": "string"
+                },
+                "VersionIndicator": {
+                    "type": "string"
+                },
+                "State": {
+                    "type": "string"
+                },
+                "StateDate": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "SetFormatName",
+                "SetFormatIdentifier",
+                "ColumnarIndicator",
+                "GroupOfFieldsIndicator",
+                "RepeatabilityForGroupOfFields",
+                "FieldFormatPosition",
+                "s_id",
+                "VersionIndicator",
+                "State",
+                "StateDate"
+            ]
+        },
+        "FieldFormat": {
+            "properties": {
+                "ElementalFieldFormat": {
+                    "properties": {
+                        "FieldFormatIndexReferenceNumber": {
+                            "type": "string"
+                        },
+                        "FieldFormatName": {
+                            "type": "string"
+                        },
+                        "FieldFormatStructure": {
+                            "type": "string"
+                        },
+                        "FieldFormatDefinition": {
+                            "type": "string"
+                        },
+                        "FieldFormatRemark": {
+                            "type": "string"
+                        },
+                        "FieldFormatSponsor": {
+                            "type": "string"
+                        },
+                        "FieldFormatRelatedDocuments": {
+                            "type": "string"
+                        },
+                        "ff_id": {
+                            "type": "string"
+                        },
+                        "VersionIndicator": {
+                            "type": "string"
+                        },
+                        "State": {
+                            "type": "string"
+                        },
+                        "StateDate": {
+                            "type": "string"
+                        },
+                        "CompositeFud": {
+                            "properties": {
+                                "FudName": {},
+                                "FudExplanation": {
+                                    "type": "string"
+                                },
+                                "FudNumber": {
+                                    "type": "string"
+                                },
+                                "FudSponsor": {
+                                    "type": "string"
+                                },
+                                "FudRelatedDocument": {
+                                    "type": "string"
+                                },
+                                "cf_id": {
+                                    "type": "string"
+                                },
+                                "VersionIndicator": {
+                                    "type": "string"
+                                },
+                                "State": {
+                                    "type": "string"
+                                },
+                                "StateDate": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "FudName",
+                                "FudNumber",
+                                "cf_id",
+                                "VersionIndicator",
+                                "State",
+                                "StateDate"
+                            ]
+                        },
+                        "CompositeFieldFormatSequence": {
+                            "properties": {
+                                "ElementalFudReference": {
+                                    "type": "string"
+                                },
+                                "ElementalFfirnFudnSequence": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "ElementalFudReference",
+                                "ElementalFfirnFudnSequence"
+                            ]
+                        },
+                        "ElementalFud": {
+                            "properties": {
+                                "FudName": {},
+                                "FudExplanation": {
+                                    "type": "string"
+                                },
+                                "FudNumber": {
+                                    "type": "string"
+                                },
+                                "MinimumLength": {
+                                    "type": "string"
+                                },
+                                "MaximumLength": {
+                                    "type": "string"
+                                },
+                                "LengthLimitation": {
+                                    "type": "string"
+                                },
+                                "UnitOfMeasure": {
+                                    "type": "string"
+                                },
+                                "Type": {
+                                    "type": "string"
+                                },
+                                "FudSponsor": {
+                                    "type": "string"
+                                },
+                                "FudRelatedDocument": {
+                                    "type": "string"
+                                },
+                                "EntryType": {
+                                    "type": "string"
+                                },
+                                "InstructiveEntry": {
+                                    "type": "string"
+                                },
+                                "IntegerRangeEntry": {
+                                    "type": "string"
+                                },
+                                "DecimalRangeEntry": {
+                                    "type": "string"
+                                },
+                                "AlphaNumericRangeEntry": {
+                                    "type": "string"
+                                },
+                                "IndividualEntry": {
+                                    "type": "string"
+                                },
+                                "ef_id": {
+                                    "type": "string"
+                                },
+                                "VersionIndicator": {
+                                    "type": "string"
+                                },
+                                "State": {
+                                    "type": "string"
+                                },
+                                "StateDate": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "FudName",
+                                "FudNumber",
+                                "MinimumLength",
+                                "MaximumLength",
+                                "LengthLimitation",
+                                "Type",
+                                "EntryType",
+                                "InstructiveEntry",
+                                "IntegerRangeEntry",
+                                "DecimalRangeEntry",
+                                "AlphaNumericRangeEntry",
+                                "IndividualEntry",
+                                "ef_id",
+                                "VersionIndicator",
+                                "State",
+                                "StateDate"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "FieldFormatIndexReferenceNumber",
+                        "FieldFormatName",
+                        "FieldFormatStructure",
+                        "ff_id",
+                        "VersionIndicator",
+                        "State",
+                        "StateDate",
+                        "CompositeFud",
+                        "CompositeFieldFormatSequence",
+                        "ElementalFud"
+                    ]
+                },
+                "CompositeFieldFormat": {
+                    "properties": {
+                        "FieldFormatIndexReferenceNumber": {
+                            "type": "string"
+                        },
+                        "FieldFormatName": {
+                            "type": "string"
+                        },
+                        "FieldFormatStructure": {
+                            "type": "string"
+                        },
+                        "FieldFormatDefinition": {
+                            "type": "string"
+                        },
+                        "FieldFormatRemark": {
+                            "type": "string"
+                        },
+                        "FieldFormatSponsor": {
+                            "type": "string"
+                        },
+                        "FieldFormatRelatedDocuments": {
+                            "type": "string"
+                        },
+                        "ff_id": {
+                            "type": "string"
+                        },
+                        "VersionIndicator": {
+                            "type": "string"
+                        },
+                        "State": {
+                            "type": "string"
+                        },
+                        "StateDate": {
+                            "type": "string"
+                        },
+                        "CompositeFud": {
+                            "properties": {
+                                "FudName": {},
+                                "FudExplanation": {
+                                    "type": "string"
+                                },
+                                "FudNumber": {
+                                    "type": "string"
+                                },
+                                "FudSponsor": {
+                                    "type": "string"
+                                },
+                                "FudRelatedDocument": {
+                                    "type": "string"
+                                },
+                                "cf_id": {
+                                    "type": "string"
+                                },
+                                "VersionIndicator": {
+                                    "type": "string"
+                                },
+                                "State": {
+                                    "type": "string"
+                                },
+                                "StateDate": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "FudName",
+                                "FudNumber",
+                                "cf_id",
+                                "VersionIndicator",
+                                "State",
+                                "StateDate"
+                            ]
+                        },
+                        "CompositeFieldFormatSequence": {
+                            "properties": {
+                                "ElementalFudReference": {
+                                    "type": "string"
+                                },
+                                "ElementalFfirnFudnSequence": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "ElementalFudReference",
+                                "ElementalFfirnFudnSequence"
+                            ]
+                        },
+                        "ElementalFud": {
+                            "properties": {
+                                "FudName": {},
+                                "FudExplanation": {
+                                    "type": "string"
+                                },
+                                "FudNumber": {
+                                    "type": "string"
+                                },
+                                "MinimumLength": {
+                                    "type": "string"
+                                },
+                                "MaximumLength": {
+                                    "type": "string"
+                                },
+                                "LengthLimitation": {
+                                    "type": "string"
+                                },
+                                "UnitOfMeasure": {
+                                    "type": "string"
+                                },
+                                "Type": {
+                                    "type": "string"
+                                },
+                                "FudSponsor": {
+                                    "type": "string"
+                                },
+                                "FudRelatedDocument": {
+                                    "type": "string"
+                                },
+                                "EntryType": {
+                                    "type": "string"
+                                },
+                                "InstructiveEntry": {
+                                    "type": "string"
+                                },
+                                "IntegerRangeEntry": {
+                                    "type": "string"
+                                },
+                                "DecimalRangeEntry": {
+                                    "type": "string"
+                                },
+                                "AlphaNumericRangeEntry": {
+                                    "type": "string"
+                                },
+                                "IndividualEntry": {
+                                    "type": "string"
+                                },
+                                "ef_id": {
+                                    "type": "string"
+                                },
+                                "VersionIndicator": {
+                                    "type": "string"
+                                },
+                                "State": {
+                                    "type": "string"
+                                },
+                                "StateDate": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "FudName",
+                                "FudNumber",
+                                "MinimumLength",
+                                "MaximumLength",
+                                "LengthLimitation",
+                                "Type",
+                                "EntryType",
+                                "InstructiveEntry",
+                                "IntegerRangeEntry",
+                                "DecimalRangeEntry",
+                                "AlphaNumericRangeEntry",
+                                "IndividualEntry",
+                                "ef_id",
+                                "VersionIndicator",
+                                "State",
+                                "StateDate"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "FieldFormatIndexReferenceNumber",
+                        "FieldFormatName",
+                        "FieldFormatStructure",
+                        "ff_id",
+                        "VersionIndicator",
+                        "State",
+                        "StateDate",
+                        "CompositeFud",
+                        "CompositeFieldFormatSequence",
+                        "ElementalFud"
+                    ]
+                }
+            },
+            "required": [
+                "ElementalFieldFormat",
+                "CompositeFieldFormat"
+            ]
+        }
+    },
+    "required": [
+        "MessageFormat",
+        "SetFormat",
+        "FieldFormat"
+    ],
+    "schema": "http://json-schema.org/schema#",
+    "type": "object"
+}
